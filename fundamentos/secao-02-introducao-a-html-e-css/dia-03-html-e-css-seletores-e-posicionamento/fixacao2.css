@@ -43,7 +43,7 @@ left: 350px;
 .bowser {
   width: 150px;
   border-style: groov;
-  position: fixed;
+  position: absolute;
   top: 170px;
   left: 500px;
 }
