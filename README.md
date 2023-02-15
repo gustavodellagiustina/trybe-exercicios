@@ -1,2 +1,2 @@
 # trybe-exercicios
-Repositório exclusivo para enviar os exerícios
+Repositório exclusivo para os exercícios
