@@ -1,0 +1,44 @@
+div:hover {
+  border-style: groove;
+}
+
+div:nth-child(3) {
+    background-color: brown;
+    color: yellow;
+    font-size: 10px;
+    font-style: italic;
+    font-family:'Gill Sans', sans-serif;
+}
+
+div:nth-child(4) {
+    background-color: blue;
+    color: red;
+    font-size: 15px;
+    font-style: normal;
+    font-family:'Franklin Gothic Medium', sans-serif;
+}
+
+div:nth-child(5) {
+    background-color: yellow;
+    color: aqua;
+    font-size: 30px;
+    font-style: italic;
+    font-family: Verdana, sans-serif;
+    height: 100px;
+}
+
+div:nth-child(6) {
+    background-color: purple;
+    color: darkorange;
+    font-size: 25px;
+    font-style: normal;
+    font-family: Impact, sans-serif;
+}
+
+div:nth-child(7) {
+    background-color:chartreuse;
+    color: fuchsia;
+    font-size: 15px;
+    font-style: italic;
+    font-family:'Segoe UI', sans-serif;
+}
