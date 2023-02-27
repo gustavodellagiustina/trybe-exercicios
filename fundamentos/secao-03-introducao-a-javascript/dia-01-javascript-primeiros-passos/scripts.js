@@ -1,4 +1,20 @@
-console.log(true || true); // true
-console.log(true || false); // true
-console.log(false || true); // true
-console.log(false || false); // false
+//switch -- case
+
+let trafficLight = 'marrom';
+
+switch (trafficLight) {
+    case 'vermelho':
+        console.log('PARE!');
+        break;
+
+    case 'amarelo':
+        console.log('ATENÇÃO!');
+        break;
+
+    case 'verde':
+        console.log('VÁ!');
+        break;
+
+    default:
+        console.log('valor não identificado');
+}
