@@ -1,17 +1,17 @@
-/* let pizzas = ['4queijos', 'frangoCatupiry', 'margherita', 'palmito', 'chocolate'];
+// let numero = 8;
 
-pizzas.push('peitodePEru');
-pizzas.push('gratinada');
+// console.log(numero * 1);
 
-for (let index = 0; index < pizzas.length; index += 1) {
-    console.log(pizzas[index]);
+/* for (inicialização; condição de repetição; incremento/decremento) {} */
+
+/* for (let contador = 1; contador <= 10; contador += 1) {
+    console.log(numero * contador)
 } */
 
-let pizzas = ['a', 'f', 'p'];
-//pizzas.push('ar');
-//pizzas.unshift('bol');
-//pizzas.pop();
-//pizzas.shift();
-console.log(pizzas.length);
-console.log(pizzas);
-console.log(pizzas.indexOf('p'));
+// ===============================================
+
+let nomes = ['Paula', 'Roberto', 'Amanda', 'Cleide', 'Daniel', 'Rods', 'Rogério', 'Joana'];
+
+for (let indice = 0; indice < nomes.length; indice += 1) {
+    console.log('Olá, ' + nomes[indice]);
+}
