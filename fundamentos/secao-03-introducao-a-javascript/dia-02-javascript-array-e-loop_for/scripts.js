@@ -8,10 +8,13 @@
     console.log(numero * contador)
 } */
 
-// ===============================================
+// ======================================================
 
-let nomes = ['Paula', 'Roberto', 'Amanda', 'Cleide', 'Daniel', 'Rods', 'Rogério', 'Joana'];
+/* let nomes = ['Paula', 'Roberto', 'Amanda', 'Cleide', 'Daniel', 'Rods', 'Rogério', 'Joana'];
 
 for (let indice = 0; indice < nomes.length; indice += 1) {
     console.log('Olá, ' + nomes[indice]);
-}
+} */
+
+// ======================================================
+
