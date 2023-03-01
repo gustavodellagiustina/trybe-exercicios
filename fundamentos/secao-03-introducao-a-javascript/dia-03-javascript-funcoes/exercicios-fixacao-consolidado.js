@@ -1,17 +1,10 @@
-// exemplo do Isaac:
-/*
-function cumprimentaCliente(cliente) {
-    return 'Olá, ' + cliente + '. Essa é sua conta do TrybeBank'
-  }
-
-  console.log(cumprimentaCliente('Isaac')) // Olá, Isaac. Essa é sua conta do TrybeBank
-*/
-
 // ======================================================
 
 // FIXAÇÃO-1:
 
 // Considere a variável saldo, que representa a quantia em conta de determinada(o) cliente do TrybeBank e escreva quatro programas que:
+
+// ======================================================
 
 /*
 ---> Adicione um valor ao saldo.
@@ -93,3 +86,52 @@ console.log(divideBalanceBy(2));
 
 // ======================================================
 
+// FIXAÇÃO-2:
+
+// ======================================================
+
+// Faça um programa para adicionar clientes ao array de clientes do TrybeBank. Certifique-se de que a função deve receber um parâmetro do tipo string e imprimir uma mensagem de erro caso o parâmetro não seja do tipo string.
+
+/*requisitos:
+1. clientesTrybeBank.push(); 2. typeOf 'parameter' === 'string'; 3. if 'parameter' !== 'string' {console.log('Erro: parâmetro deve er uma string')}
+
+
+let clientesTrybeBank = ['Ada', 'John', 'Gus'];
+let newClient;
+let errorMessage = 'Error: invalid value; type a string instead.';
+
+function addClients(newClient) {
+    if (typeof newClient === 'string') {
+        clientesTrybeBank.push(newClient);
+        return clientesTrybeBank;
+    } else {
+        return console.log(errorMessage);
+    }
+}
+
+console.log(addClients('Lea'));
+console.log(addClients(161));
+console.log(addClients(true));
+console.log(addClients(undefined));
+console.log(addClients(null));
+*/
+
+// ======================================================
+
+// Agora iremos escrever um programa que irá excluir um(a) cliente já existente do array de clientes do TrybeBank. Certifique-se de que a função deve receber um parâmetro do tipo string e imprimir uma mensagem de erro, caso o parâmetro não seja do tipo string e caso o(a) cliente não exista dentro do array.
+
+// usar o metodo de array '.includes';
+
+let clientesTrybeBank = ['Ada', 'John', 'Gus'];
+let client;
+let errorMessage = 'Error: invalid value; type a string instead.';
+
+function removeThisClient(client) {
+    if (typeof client === 'string') {
+        for (let index = 0; index < clientesTrybeBank.length; index += 1) {
+
+        }
+    } else {
+        return console.log(errorMessage);
+    }
+}
