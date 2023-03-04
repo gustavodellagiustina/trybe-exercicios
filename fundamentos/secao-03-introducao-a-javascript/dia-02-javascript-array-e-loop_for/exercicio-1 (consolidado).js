@@ -157,5 +157,55 @@ console.log(numbersBy2);
 
 // ====================================LÓGICA DE PROGRAMAÇÃO E ALGORITMOS==============================
 
-// exercício de FATORIAL!
+/*
+// 1. Com base nessas informações, crie um algoritmo que imprima na tela o fatorial de 10.
+// diminuir um a um e multiplicar o índice pela variável, parecido com o somatório;
 
+let factorial = 1;
+
+for (let index = 5; index > 0; index -= 1) {
+    factorial *= index;
+}
+
+console.log(factorial);
+*/
+
+// =========================
+
+/*
+// 2. Utilize a estrutura de repetição for para desenvolver um algoritmo que seja capaz de inverter uma palavra, como a palavra “banana” para “ananab”.
+
+let word = 'ananab';
+let reverseWord = '';
+
+for (let index = 0; index - word.length; index += 1) {
+    reverseWord += word[word.length - 1 - index]
+}
+
+console.log(reverseWord);
+*/
+
+// =========================
+
+/*
+// 3. Utilize a estrutura de repetição for para escrever dois algoritmos: um que imprima no console a maior palavra desse array e outro que imprima a menor. Considere o número de caracteres de cada palavra.
+
+let array = ['java', 'javascript', 'python', 'html', 'css', 'ij'];
+let longestWord = array[0];
+
+for (let index = 1; index < array.length; index += 1) {
+    if (array[index].length > longestWord.length) {
+        longestWord = array[index];
+    }
+}
+console.log(longestWord);
+//
+let shortestWord = array[0];
+
+for (let index = 1; index < array.length; index += 1) {
+    if (array[index].length < shortestWord.length) {
+        shortestWord = array[index];
+    }
+}
+console.log(shortestWord);
+*/
