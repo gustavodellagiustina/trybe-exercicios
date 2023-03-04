@@ -121,17 +121,19 @@ console.log(addClients(null));
 // Agora iremos escrever um programa que irá excluir um(a) cliente já existente do array de clientes do TrybeBank. Certifique-se de que a função deve receber um parâmetro do tipo string e imprimir uma mensagem de erro, caso o parâmetro não seja do tipo string e caso o(a) cliente não exista dentro do array.
 
 // usar o metodo de array '.includes';
-
-let clientesTrybeBank = ['Ada', 'John', 'Gus'];
-let client;
-let errorMessage = 'Error: invalid value; type a string instead.';
-
+/*
 function removeThisClient(client) {
-    if (typeof client === 'string') {
-        for (let index = 0; index < clientesTrybeBank.length; index += 1) {
+    let clientesTrybeBank = ['Ada', 'John', 'Gus'];
+    let clientIndex;
+    let errorMessage = 'Error: not a string value OR client not found in the database.';
 
-        }
+    if ((typeof client === 'string') && (clientesTrybeBank.includes(client) === true)) {
+        clientIndex = clientesTrybeBank.indexOf(client);
+        clientesTrybeBank.splice(clientIndex, 1)
     } else {
-        return console.log(errorMessage);
+        return errorMessage;
     }
+    return clientesTrybeBank;
 }
+console.log(removeThisClient('xabalu'));
+*/
