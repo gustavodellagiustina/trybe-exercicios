@@ -1,4 +1,4 @@
-///////////////////////////////////////////////LIDANDO COM ARRAYS////////////////////////////////////////////////////
+// ------------LIDANDO COM ARRAYS (ROCKET)------------------
 
 
 // let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
@@ -155,6 +155,7 @@ for (let index = 0; index < numbers.length; index += 1) {
 console.log(numbersBy2);
 */
 
-////////////////////////////////////////////// LÓGICA DE PROGRAMAÇÃO E ALGORITMOS /////////////////////////////////////////////////
+// ====================================LÓGICA DE PROGRAMAÇÃO E ALGORITMOS==============================
 
-// continuar exercícios de fatorial!;
+// exercício de FATORIAL!
+
