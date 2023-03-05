@@ -65,8 +65,8 @@ for (let index in car) {
 const student = {};
 let newKey;
 
-function addProperty(object, key, value) {
-    object[key] = value;
+function addProperty(example, key, value) {
+    example[key] = value;
 };
 
 newKey = 'firstName';
@@ -107,10 +107,111 @@ let student3 = {
 };
 
 function listSkills(student) {
-    let skillsArray = Object.keys(student3);
+    let skillsArray = example.keys(student3);
     for (let index in skillsArray) {
         console.log(skillsArray[index] + ', Nível: ' + student[skillsArray[index]]);
     }
 }
 console.log(listSkills(student3));
 */
+
+// ============================================
+
+// 🚀 Exercícios - objetos e for/in
+
+// ============================================
+
+/*
+let info = {
+    personagem: 'Margarida',
+    origem: 'Pato Donald',
+    nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
+};
+*/
+
+// ============================================
+
+// Imprima no console uma mensagem de boas-vindas para a personagem acima, na qual tenha o nome dela. Para isso, utilize a sintaxe meuObjeto.chave.
+// console.log('Bem-vinda, ' + info.personagem);
+
+// ============================================
+
+// Insira no objeto uma nova propriedade com o nome de chave ‘recorrente’ e o valor ‘Sim’ e, em seguida, imprima o objeto no console. Para isso, use a sintaxe meuObjeto['chave'] = valor.
+
+/*
+info['recorrente'] = 'Sim';
+// console.log(info);
+*/
+
+// ============================================
+
+// Faça um for/in que mostre todas as chaves do objeto.
+
+/*
+for (let key in info) {
+    console.log(key);
+}
+*/
+
+// ============================================
+
+// Faça um novo for/in, mas agora mostre todos os valores das propriedades do objeto.
+
+/*
+for (let value in info) {
+    console.log(info[value]);
+}
+*/
+
+// ============================================
+
+// Agora, defina um segundo objeto com a mesma estrutura (as mesmas chaves) do primeiro e os seguintes valores: “Tio Patinhas”, “Christmas on Bear Mountain, Dell’s Four Color Comics #178”, “O último MacPatinhas”, “Sim”. Então, imprima os valores de cada objeto juntos, de acordo com cada uma das chaves.
+
+/*
+let info2 = {
+    personagem: 'Tio Patinhas',
+    origem: 'Christmas on Bear Mountain, Dell’s Four Color Comics #178',
+    nota: 'O último MacPatinhas',
+    recorrente: 'Sim',
+};
+
+infoValues = Object.values(info);
+info2Values = Object.values(info2);
+
+function verificaRecorrentes() {
+    let mensagem;
+    if (infoValues[3] === info2Values[3]) {
+        mensagem = 'Ambos recorrentes';
+    }
+    return mensagem;
+}
+
+console.log(`${infoValues[0]} e ${info2Values[0]}
+${infoValues[1]} e ${info2Values[1]}
+${infoValues[2]} e ${info2Values[2]}
+${verificaRecorrentes()}`);
+
+// ---> retorno esperado <---
+// Margarida e Tio Patinhas
+// Pato Donald e Christmas on Bear Mountain, Dell's Four Color Comics #178
+// Namorada do personagem principal nos quadrinhos do Pato Donald e O último MacPatinhas
+// Ambos recorrentes // Atenção para essa última linha
+*/
+
+// ============================================
+
+// 🚀 Leitura de Objetos
+
+let leitor = {
+    nome: 'Julia',
+    sobrenome: 'Pessoa',
+    idade: 21,
+    livrosFavoritos: [
+        {
+            titulo: 'O Pior Dia de Todos',
+            autor: 'Daniela Kopsch',
+            editora: 'Tordesilhas',
+        },
+    ],
+};
+
