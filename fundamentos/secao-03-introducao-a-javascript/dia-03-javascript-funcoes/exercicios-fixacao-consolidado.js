@@ -95,7 +95,6 @@ console.log(divideBalanceBy(2));
 /*requisitos:
 1. clientesTrybeBank.push(); 2. typeOf 'parameter' === 'string'; 3. if 'parameter' !== 'string' {console.log('Erro: parâmetro deve er uma string')}
 
-
 let clientesTrybeBank = ['Ada', 'John', 'Gus'];
 let newClient;
 let errorMessage = 'Error: invalid value; type a string instead.';
@@ -137,3 +136,51 @@ function removeThisClient(client) {
 }
 console.log(removeThisClient('xabalu'));
 */
+
+// ======================================================
+
+// FIXAÇÃO-3: (redução de complexidades: uma função por tarefa)
+
+// ======================================================
+
+// Refatore a função removeCliente para diminuir sua complexidade e quebrá-la em funções menores.
+
+let clientesTrybeBank = ['Ada', 'John', 'Gus'];
+
+function verificaParametro(cliente) {
+    let parametroValido;
+
+    if (typeof cliente === 'string') {
+        parametroValido = true;
+    }
+    return parametroValido;
+}
+// console.log(verificaParametro(72468724));
+
+function verificaClienteNaBase(cliente) {
+    let clienteEncontrado;
+
+    if (clientesTrybeBank.includes(cliente) === true) {
+        clienteEncontrado = true;
+    }
+    return clienteEncontrado;
+}
+
+// console.log(verificaClienteNaBase('Uhura'));
+
+function removeCliente(cliente) {
+    let clientIndex;
+
+    if (verificaParametro(cliente) === true) {
+        if (verificaClienteNaBase(cliente) === true) {
+            clientIndex = clientesTrybeBank.indexOf(cliente);
+            clientesTrybeBank.splice(clientIndex, 1);
+        } else {
+            return 'Cliente não encontrado na base de dados.'
+        }
+    } else {
+        return 'Parâmetro de tipo diferente de "string".';
+    }
+    return clientesTrybeBank;
+}
+console.log(removeCliente('Saruman'));
