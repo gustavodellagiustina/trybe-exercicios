@@ -1,10 +1,11 @@
 // Crie uma variável player e atribua a ela um objeto que contenha as variáveis listadas na sequência.
+/*
 let name = 'Marta';
 let lastName = 'Silva';
 let age = 34;
 let medals = { golden: 2, silver: 3 };
 
-/*
+
 const player = {
     name: 'Marta',
     lastName: 'Silva',
@@ -55,4 +56,41 @@ let car = {
 for (let index in car) {
     console.log(index + ': ' + car[index]);
 }
+*/
+
+// ============================================
+
+// Após ter conhecido diferentes maneiras de associar chaves e valores a um objeto, que tal praticar? Adicione suas informações ao objeto student = {}, como nome, e-mail, telefone, GitHub e LinkedIn, usando os métodos abordados no conteúdo.
+/*
+const student = {};
+let newKey;
+
+function addProperty(object, key, value) {
+    object[key] = value;
+};
+
+newKey = 'firstName';
+let firsName = 'Gustavo';
+addProperty(student, newKey, firsName);
+console.log(student);
+
+newKey = 'lastName';
+let lastName = 'Della Giustina';
+addProperty(student, newKey, lastName);
+console.log(student);
+
+newKey = 'age';
+let age = 27;
+addProperty(student, newKey, age);
+console.log(student);
+
+newKey = 'human';
+let human = true;
+addProperty(student, newKey, human);
+console.log(student);
+
+newKey = 'country';
+let country = 'Brazil';
+addProperty(student, newKey, country);
+console.log(student);
 */
