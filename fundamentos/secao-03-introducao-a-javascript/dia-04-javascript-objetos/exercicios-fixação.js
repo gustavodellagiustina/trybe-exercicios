@@ -94,3 +94,23 @@ let country = 'Brazil';
 addProperty(student, newKey, country);
 console.log(student);
 */
+
+// ============================================
+
+// Tente criar uma função que exiba as habilidades do objeto student. Nesse caso, cada habilidade deve ser exibida no formato “Nome da habilidade, Nível: valor da chave referente à habilidade”. Após desenvolver a função, observe a sugestão de resposta a seguir e compare-a com sua solução.
+/*
+let student3 = {
+    html: 'Muito Bom',
+    css: 'Bom',
+    javascript: 'Ótimo',
+    softskills: 'Ótimo',
+};
+
+function listSkills(student) {
+    let skillsArray = Object.keys(student3);
+    for (let index in skillsArray) {
+        console.log(skillsArray[index] + ', Nível: ' + student[skillsArray[index]]);
+    }
+}
+console.log(listSkills(student3));
+*/
