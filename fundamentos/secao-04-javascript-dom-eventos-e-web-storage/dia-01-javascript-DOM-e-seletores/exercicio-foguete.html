@@ -1,0 +1,72 @@
+<!--
+<main id="paiDoPai">
+    <section id="pai">
+      <section id="primeiroFilho"></section>
+      <section id="elementoOndeVoceEsta">
+        <section id="primeiroFilhoDoFilho"></section>
+        <section id="segundoEUltimoFilhoDoFilho"></section>
+      </section>
+      Atenção!
+      <section id="terceiroFilho"></section>
+      <section id="quartoEUltimoFilho"></section>
+    </section>
+  </main>
+  <script src="exercicio-foguete.js"></script>
+-->
+<!--
+
+  NO CHROME:
+
+document.getElementById('elementoOndeVoceEsta').parentElement.style.color = 'red';
+'red'
+    document.getElementById('primeiroFilhoDoFilho').innerText = 'Hello world';
+'Hello world'
+document.getElementById('pai').nextSibling;
+#text
+document.getElementById('elementoOndeVoceEsta').parentNode;
+<section id=​"pai" style=​"color:​ red;​">​…​</section>​
+document.getElementById('elementoOndeVoceEsta').parentElement;
+<section id=​"pai" style=​"color:​ red;​">​…​</section>​
+document.getElementById('elementoOndeVoceEsta').nextSibling
+" Atenção! "
+document.getElementById('elementoOndeVoceEsta').nextElementSibling
+<section id=​"terceiroFilho">​</section>​
+document.getElementById('pai').nextElementSibling.nextElementSibling.nextElementSibling
+VM937:1 Uncaught TypeError: Cannot read properties of null (reading 'nextElementSibling')
+    at <anonymous>:1:50
+(anônimo) @ VM937:1
+document.getElementById('pai').nextElementSibling.nextElementSibling
+VM967:1 Uncaught TypeError: Cannot read properties of null (reading 'nextElementSibling')
+    at <anonymous>:1:50
+(anônimo) @ VM967:1
+document.getElementById('pai').nextElementSibling
+null
+document.getElementById('pai').nextElementSibling.nextElementSibling;
+VM1114:1 Uncaught TypeError: Cannot read properties of null (reading 'nextElementSibling')
+    at <anonymous>:1:50
+(anônimo) @ VM1114:1
+document.getElementById('pai').childNodes;
+NodeList(9) [text, section#primeiroFilho, text, section#elementoOndeVoceEsta, text, section#terceiroFilho, text, section#quartoEUltimoFilho, text]0: text1: section#primeiroFilho2: text3: section#elementoOndeVoceEsta4: text5: section#terceiroFilho6: text7: section#quartoEUltimoFilho8: textlength: 9[[Prototype]]: NodeList
+document.getElementById('pai').childNodes[1];
+<section id=​"primeiroFilho">​</section>​
+document.getElementById('pai').childNodes[3];
+<section id=​"elementoOndeVoceEsta">​…​</section>​
+document.getElementById('pai').childNodes[5];
+<section id=​"terceiroFilho">​</section>​
+-->
+
+<main id="paiDoPai">
+  <section id="pai">
+    <section id="primeiroFilho"></section>
+    <section id="elementoOndeVoceEsta">
+      <section id="primeiroFilhoDoFilho"></section>
+      <section id="segundoEUltimoFilhoDoFilho"></section>
+    </section>
+    Atenção!
+    <section id="terceiroFilho"></section>
+    <section id="quartoEUltimoFilho"></section>
+  </section>
+</main>
+<script>
+  
+</script>
